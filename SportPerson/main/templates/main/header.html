@@ -1,0 +1,28 @@
+<head>
+	{% load static %}
+	<!-- Compiled and minified CSS -->
+    <link href="{% static 'main/css/materialize.css' %}" rel="stylesheet">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <style type="text/css">
+        div.limit{
+  height: 110px;
+  overflow: auto;
+}
+    </style>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="{% static 'main/css/styles.css' %}" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" />
+
+</head>
+
+<body>
+
+    {% include "main/includes/navbar.html" %}
+    {% include "main/includes/messages.html" %}
+
+    {% block content %}
+    {% endblock %}
+
+</body>

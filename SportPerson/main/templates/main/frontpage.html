@@ -1,0 +1,77 @@
+{% extends "main/header.html" %}
+
+{% block content %}
+  <div class="tiles">
+    <br>
+    <section class="swiper-container loading">
+      <div class="swiper-wrapper">
+        
+        <div class="swiper-slide slide1">
+          <div class="content">
+            <p class="title" data-swiper-parallax="-30%" data-swiper-parallax-scale=".7">Welcome to Sports Person</p>
+            <span class="caption" data-swiper-parallax="-20%">Sports Person is an collection of latest sports score updates from
+            various kinds of sports.
+        </span>
+                    <a href="/login"><button style="border-radius: 20px;" class="btn-small" type="submit">Login</button></a> or
+            <a href="/register"><button style="border-radius: 20px;" class="btn-small" type="submit">Register</button></a> for Scores
+          </div>
+        </div>
+
+        <div class="swiper-slide slide2">
+          <div class="content">
+            <p class="title" data-swiper-parallax="-30%" data-swiper-parallax-scale=".7">Cricket</p>
+            <span class="caption" data-swiper-parallax="-20%">Cricket is a bat-and-ball game played between two teams of eleven players on a field at the centre of which is pitch with a wicket at each end, each comprising two bails balanced on three stumps.</span>
+            <a href="/cricket"><button style="border-radius: 20px;" class="btn-small" type="submit">Cricket</button></a>
+          </div>
+        </div>
+
+        <div class="swiper-slide slide3">
+         
+          <div class="content">
+            <p class="title" data-swiper-parallax="-30%" data-swiper-parallax-scale=".7">Foot Ball</p>
+            <span class="caption" data-swiper-parallax="-20%">Football is a family of team sports that involve, to varying degrees, kicking a ball to score a goal.</span>
+            <a href="/football"><button style="border-radius: 20px;" class="btn-small" type="submit">Football</button></a>
+          </div>
+        </div>
+      
+        <div class="swiper-slide slide4">
+          <div class="content">
+            <p class="title" data-swiper-parallax="-30%" data-swiper-parallax-scale=".7">Basket ball</p>
+            <span class="caption" data-swiper-parallax="-20%">Basketball is a team sport in which two teams, most commonly of five players each, opposing one another on a rectangular court from putting ball in hoop.</span>
+            <a href="/basketball"><button style="border-radius: 20px;" class="btn-small" type="submit">BasketBall</button></a>
+          </div>
+        </div>
+
+    </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>
+  <script>
+    let sliderSelector = '.swiper-container',
+        options = {
+          loop: true,
+          speed:800,
+          slidesPerView: 2, // or 'auto'
+          spaceBetween: 20,
+          centeredSlides : true,
+          effect: 'coverflow', // 'cube', 'fade', 'coverflow',
+          coverflowEffect: {
+            rotate: 50, // Slide rotate in degrees
+            stretch: 0, // Stretch space between slides (in px)
+            depth: 50, // Depth offset in px (slides translate in Z axis)
+            modifier: 1, // Effect multipler
+            slideShadows : true // Enables slides shadows
+          },
+          grabCursor: true,
+          parallax: true,
+          on: {
+            imagesReady: function(){
+              this.el.classList.remove('loading');
+            }
+          }
+        };
+    let mySwiper = new Swiper(sliderSelector, options);
+    mySwiper.init();
+  </script>
+  </div>
+
+{% endblock %}

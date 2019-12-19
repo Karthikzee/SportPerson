@@ -1,0 +1,17 @@
+{% extends "main/header.html" %}
+
+{% block content %}
+<div class="container">
+	<br>
+	<h6>Tip: Please Login to view scores, if you don't have a exciting account <a href="/register">Register</a> for one now.</h6>
+	<br><br>
+	<form method="POST">
+		{% csrf_token %}
+		{{form.as_p}}
+
+		<button class="btn" type="submit">Login</button>
+	</form>
+
+	If you don't already have an account, <a href="/register"><button class="btn-small" type="submit">Register</button></a> for one.
+</div>
+{% endblock %}

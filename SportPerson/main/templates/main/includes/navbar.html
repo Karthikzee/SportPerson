@@ -1,0 +1,20 @@
+  {% load static %}
+   <nav>
+    <div class="nav-wrapper">
+      <a href="/" class="brand-logo"><img style="border-radius: 34px" src="{% static 'main/css/logo.png' %}" height="64px"></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="/">Home</a></li>
+        <li><a href="/cricket">Cricket</a></li>
+        <li><a href="/football">FootBall</a></li>
+        <li><a href="/basketball">BasketBall</a></li>
+        {% if user.is_authenticated %}
+          <li><a href="/profile">{{user.username}}</a></li>
+          <li><a href="/logout">Logout</a></li>
+        {% else %}
+          <li><a href="/register">Register</a></li>
+          <li><a href="/login">Login</a></li>
+        {% endif %}
+
+      </ul>
+    </div>
+  </nav>
