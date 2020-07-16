@@ -27,6 +27,16 @@ The registration form and login was created using the default registration pages
 ``` python
 pip install -r requirements.txt
 ```
+OR
+``` python
+pip3 install -r requirements.txt
+```
+
+4. After install you can launch a local server using
+``` python
+python manage.py runserver
+```
+and go to the mentioned local host address
 
 I am Karthik G, Bengaluru, India and this was Sports Person.
 
