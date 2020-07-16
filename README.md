@@ -18,6 +18,15 @@ Users must login before viewing the score, this is to keep track of number of us
 
 The registration form and login was created using the default registration pages provided by the Django web Framework.
 
+# How to Run the Project
+1. Clone download the Repository [Sports Person](https://github.com/Karthikzee/SportPerson.git) .
+
+2. Go to cd into SportPerson/SportPerson
+
+3. Run ```bash
+pip install -r requirements.txt
+```
+```
 
 I am Karthik G, Bengaluru, India and this was Sports Person.
 
