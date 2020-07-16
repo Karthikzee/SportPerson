@@ -20,5 +20,6 @@ The registration form and login was created using the default registration pages
 
 
 I am Karthik G, Bengaluru, India and this was Sports Person.
+
 Thank You Prof.David J Malan, Mr.Doug Lloyd, Brian Yu, CS50, Harvard and edX. :)
 
