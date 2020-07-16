@@ -21,7 +21,7 @@ The registration form and login was created using the default registration pages
 # How to Run the Project
 1. Clone download the Repository [Sports Person](https://github.com/Karthikzee/SportPerson.git) .
 
-2. Go to cd into SportPerson/SportPerson
+2. Go to cd into SportPerson/
 
 3. Run
 ``` python
