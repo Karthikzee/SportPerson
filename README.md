@@ -23,9 +23,8 @@ The registration form and login was created using the default registration pages
 
 2. Go to cd into SportPerson/SportPerson
 
-3. Run ```bash
-pip install -r requirements.txt
-```
+3. Run
+``` pip install -r requirements.txt
 ```
 
 I am Karthik G, Bengaluru, India and this was Sports Person.
