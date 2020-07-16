@@ -32,7 +32,7 @@ OR
 pip3 install -r requirements.txt
 ```
 
-4. After install you can launch a local server using
+4. After installation of required dependencies you can launch a local server using
 ``` python
 python manage.py runserver
 ```
