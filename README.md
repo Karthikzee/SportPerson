@@ -36,7 +36,8 @@ pip3 install -r requirements.txt
 ``` python
 python manage.py runserver
 ```
-and go to the mentioned local host address
+and go to the mentioned local host address.
+
 
 I am Karthik G, Bengaluru, India and this was Sports Person.
 
